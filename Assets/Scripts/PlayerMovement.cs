@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5f;
+    public float sprintSpeed = 10f; // New sprint speed
     public float sensitivity = 2f;
 
     private float rotationX = 0f;
-
 
     private void Update()
     {
@@ -15,7 +16,10 @@ public class PlayerMovement : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        Vector3 movement = new Vector3(horizontal, 0f, vertical) * speed * Time.deltaTime;
+        // Check if the player is holding down the Shift key for sprinting
+        float currentSpeed = Input.GetKey(KeyCode.LeftShift) ? sprintSpeed : speed;
+
+        Vector3 movement = new Vector3(horizontal, 0f, vertical) * currentSpeed * Time.deltaTime;
         transform.Translate(movement);
 
         // Camera Rotation
