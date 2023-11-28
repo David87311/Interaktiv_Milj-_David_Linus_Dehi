@@ -924,7 +924,7 @@ GameObject:
   - component: {fileID: 40314024}
   - component: {fileID: 40314023}
   m_Layer: 5
-  m_Name: Options
+  m_Name: Controls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -939,7 +939,7 @@ RectTransform:
   m_GameObject: {fileID: 40314021}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1150186, y: 2.6335413, z: 1.2217776}
+  m_LocalScale: {x: 0.97701275, y: 2.3075879, z: 1.0705582}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 247572311}
@@ -1014,7 +1014,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a3143d452e5a9a741b74fa25aae4ce94, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9cdb43a58f37a2343a3ead5115990249, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -40489,8 +40489,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.0043945312}
-  m_SizeDelta: {x: 5.5923, y: 1708.2}
+  m_AnchoredPosition: {x: 0, y: -0.000061035156}
+  m_SizeDelta: {x: 5.5923, y: 2008}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1770182253
 MonoBehaviour:
@@ -42625,7 +42625,7 @@ GameObject:
   - component: {fileID: 1862821149}
   - component: {fileID: 1862821148}
   m_Layer: 5
-  m_Name: Exit
+  m_Name: Quit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42640,7 +42640,7 @@ RectTransform:
   m_GameObject: {fileID: 1862821146}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1150186, y: 2.6335413, z: 1.2217776}
+  m_LocalScale: {x: 0.94747597, y: 2.2378254, z: 1.0381933}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 430360228}
@@ -42727,7 +42727,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9afb32e3ee37a61438d6b70f2c3a4cff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ff8aba35189dcff4c8aefbf6c2388ddd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -45448,7 +45448,7 @@ GameObject:
   - component: {fileID: 1969634416}
   - component: {fileID: 1969634415}
   m_Layer: 5
-  m_Name: Play
+  m_Name: Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45550,7 +45550,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4a47f81b2d8b21a46bb97223a02ef2b7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 14c24840fb35afa4489edf7e4847c981, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
