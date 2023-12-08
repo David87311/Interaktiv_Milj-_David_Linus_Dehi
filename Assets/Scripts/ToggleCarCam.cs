@@ -11,12 +11,18 @@ public class ToggleCarCam : MonoBehaviour
     public Camera CarCam; // Assign the second camera script in the inspector
 
     public MonoBehaviour MovementPlayer;
+    public MonoBehaviour CarControls;
+
+
     // public MonoBehaviour CarControl;
 
+    public GameObject Player;
 
-    public GameObject PlayerCharacter;
+    public Transform CarExit;
 
     private bool isScript1Active = true;
+
+    private bool InCar = false;
 
 
     public void Start()
@@ -30,6 +36,15 @@ public class ToggleCarCam : MonoBehaviour
         {
             ToggleScripts();
         }
+
+        if (InCar == true) 
+        {
+            transform.position = CarExit.transform.position; // Min gubbe följer med bilen.
+
+            // Disable the renderer
+
+        }
+
     }
 
     bool IsPlayerInInteractionArea()
@@ -41,21 +56,37 @@ public class ToggleCarCam : MonoBehaviour
     {
         if (isScript1Active)
         {
+            //Inte i bilen
+
             MovementPlayer.enabled = true;
+            CarControls.enabled = false;
+
             FirstPersonScript.enabled = true;
             CarCamScript.enabled = false;
             FirstPersonCam.enabled = true;
             CarCam.enabled = false;
-            Debug.Log("Player Script 1 disabled, Player Script 2 enabled. Camera Script 1 disabled, Camera Script 2 enabled.");
+            InCar = false;
+            Player.GetComponent<Renderer>().enabled = true;
+
+            CarExit.parent.GetComponent<AudioSource>().Stop();
+
+
         }
         else
         {
+            //I bilen
+
             MovementPlayer.enabled=false;
+            CarControls.enabled = true;
             FirstPersonScript.enabled = false;
             CarCamScript.enabled = true;
             FirstPersonCam.enabled = false;
             CarCam.enabled = true;
-            Debug.Log("Player Script 1 enabled, Player Script 2 disabled. Camera Script 1 enabled, Camera Script 2 disabled.");
+            InCar = true;
+            Player.GetComponent<Renderer>().enabled = false;
+
+            CarExit.parent.GetComponent<AudioSource>().Play();
+
         }
 
         isScript1Active = !isScript1Active;
