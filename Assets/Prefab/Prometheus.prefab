@@ -588,6 +588,7 @@ GameObject:
   - component: {fileID: 6679353787222036468}
   - component: {fileID: 6698075329124381733}
   - component: {fileID: 5935425610884520373}
+  - component: {fileID: 2310950340369009538}
   m_Layer: 0
   m_Name: Prometheus
   m_TagString: Untagged
@@ -933,6 +934,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2310950340369009538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3363780903913885147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422c9bebac44fe1418aea7693d36067d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeSlider: {fileID: 0}
+  audioSource1: {fileID: 6698075329124381733}
+  audioSource2: {fileID: 5935425610884520373}
 --- !u!1 &3584105800807748721
 GameObject:
   m_ObjectHideFlags: 0
